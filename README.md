@@ -99,7 +99,7 @@ Este projeto está sob a licença **MIT**. Isso significa que você pode utiliz�
 
 Desenvolvido por Mariana Bispo como desafio final de uma trilha focada em Arquitetura de Software e .NET.
 
-[![Meu Ícone](Mariana SP-Studio.png)]
+[![Meu Ícone](https://github.com/bispomariana/BankSim/blob/master/Mariana%20SP-Studio.png)]
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-bispo-840653263/) 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bispomariana)
