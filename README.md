@@ -32,7 +32,7 @@ O **BankSim** é uma API desenvolvida em .NET 8 que simula as operações essenc
 
 ---
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 O projeto segue a **Clean Architecture**, dividido em camadas:
 
@@ -43,7 +43,7 @@ O projeto segue a **Clean Architecture**, dividido em camadas:
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
@@ -89,13 +89,13 @@ Acesse o Swagger em: https://localhost:5082/swagger (ou a porta indicada no term
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença **MIT**. Isso significa que você pode utilizá-lo, estudá-lo e modificá-lo livremente. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido por Mariana Bispo como desafio final de uma trilha focada em Arquitetura de Software e .NET.
 
