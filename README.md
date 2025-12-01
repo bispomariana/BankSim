@@ -21,7 +21,7 @@ O **BankSim** é uma API desenvolvida em .NET 8 que simula as operações essenc
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **.NET 8 SDK** (C#)
 - **ASP.NET Core Web API**
