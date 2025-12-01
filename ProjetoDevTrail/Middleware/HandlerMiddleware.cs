@@ -58,36 +58,12 @@ namespace ProjetoDevTrail.Api.Middleware
                     response.Message = "An error occurred on the server. Please try again later.";
                     break;
             }
-
-            object payload = response;
-
-            // 2. Se for Desenvolvimento, criamos um objeto novo contendo o InnerError
-            if (_env.IsDevelopment())
-            {
-                response.Details = exception.StackTrace;
-
-                // Em erro 500, pegamos a mensagem real da exceção
-                if (response.StatusCode == 500)
-                    response.Message = exception.Message;
-
-                // AQUI ESTÁ O PULO DO GATO:
-                // Criamos um objeto anônimo que tem tudo que o response tem + o InnerError
-                payload = new
-                {
-                    response.StatusCode,
-                    response.Message,
-                    response.Details,
-                    // Pega o erro interno (onde está o detalhe do banco de dados)
-                    InnerError = exception.InnerException?.Message
-                };
-            }
+             
 
             context.Response.StatusCode = response.StatusCode;
 
             var jsonOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
-
-            // 3. Serializamos o 'payload' (que pode ter o InnerError) em vez do 'response'
-            var json = JsonSerializer.Serialize(payload, jsonOptions);
+            var json = JsonSerializer.Serialize(response, jsonOptions);
 
             await context.Response.WriteAsync(json);
         }
